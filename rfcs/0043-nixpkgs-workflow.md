@@ -23,8 +23,8 @@ The workflow proposed in this document is inspired by the linux kernel workflow.
 Pushing to the master branch of a software development project is not a good
 practice in more-than-one-contributor environments.
 Security vulnerabilities, breaking changes which are not tested and regressions
-are easily introduced this way. which could've been prevented by a proper
-workflow.
+are easily introduced this way. Those can been prevented by a proper workflow
+and tooling that comes with the workflow.
 <!-- TODO: Expand -->
 
 In the last year (as of 2019-04-13), we had
@@ -47,6 +47,55 @@ achieve more security, stability and even more important better scalability.
 
 # Detailed design
 [design]: #detailed-design
+
+## Entities
+
+Before we get to the details of the design proposed in this RFC, we define the
+entities used in the workflow.
+Those are:
+
+* "Aspect": Either a (sub)set of packages, services or other infrastructure
+  which is related to or exists in the nixpkgs repository.
+
+* "Team": a limited group of people which is responsible for one _aspect_ of the
+  nixpkgs repository.
+
+* "Core Contributor": A person belonging to one or more Teams.
+
+* "Contributor": A person who _actively_ contributes to the nixpkgs repository,
+  possibly maintains packages and can be considered _known_ (in person or by
+  nick) in the community.
+
+* "External Contributor": A person that does not belong to any team, and is not
+  (yet) known to the community.
+
+
+## Workflow description
+
+The following section describes the workflow.
+
+
+### Top-Level Workflow
+<!-- TODO: Better wording for header -->
+
+### Team workflow
+
+### Contributor workflow
+
+### External Contributor workflow
+<!--
+    TODO: Describe how external contributors should be routed to the right
+    repository
+-->
+
+
+## Implementation
+<!-- TODO: How to get there -->
+
+
+### CONTRIBUTING.md
+<!-- TODO: How to rewrite the contributing guide -->
+
 
 <!-- TODO -->
 
