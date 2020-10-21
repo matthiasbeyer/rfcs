@@ -51,6 +51,14 @@ There must be rules for:
 This only affects nixpkgs committers.
 When pushing to a protected branch directly, they get the same message as everyone else and they have to push to an unprotected branch and create a Pull Request from there.
 
+When backporting changes from (e.g.) the master branch to a release branch,
+these changes can be collected into a "backports"-PR and merged frequently from
+there (for example daily or weekly).
+
+Bigger changesets, which might take a considerably longer run on the CI system,
+can be collected into PRs as well and be merged from there (similiar to the
+current "staging"-workflow).
+
 # Drawbacks
 [drawbacks]: #drawbacks
 
